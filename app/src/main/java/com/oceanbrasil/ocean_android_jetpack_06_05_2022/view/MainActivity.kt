@@ -39,6 +39,7 @@ class MainActivity : AppCompatActivity() {
 
             if (name.isNotBlank()) {
                 pokemonViewModel.create(Pokemon(name))
+                etPokemonName.setText("")
             } else {
                 etPokemonName.error = "Digite um nome válido!"
             }
